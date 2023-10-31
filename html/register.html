@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\reset.css">
+    <link rel="stylesheet" href="..\css\style.css">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="../index.html">
+        <div class="entete" id="entete">
+            <img src="../images/portal1-removebg-preview.png" class="portal1" id="portal1" alt="portal blue">
+            <h1>PIXELPORTAL</h1>
+            <img src="../images/portal2-removebg-preview.png" class="portal2" id="portal2" alt="portal orange">
+        </div>
+    </a>
+    <header>
+        <div class="header" id="header">Ajouter un compte</div>
+    </header>
+    <div class="bodyRegister" id="bodyRegister">
+        <div class="backgroundFormRegister" id="backgroundFormRegister">
+            <form action="#" method="post" class="formRegister" id="formRegister">
+                <label for="nom" id="lnom" class="lnom">Nom :</label>
+                <label for="prenom" id="lprenom" class="lprenom">Prenom :</label>
+                <div class="nomPrenomForm" id="nomPrenomForm">
+                    <input type="text" class="inputRegister" id="nom" name="nom" placeholder="Saisissez votre nom">
+                    <input type="text" class="inputPrenom" id="prenom" name="prenom" placeholder="Saisissez votre prenom">
+                </div>
+      
+                <label for="email" id="lemail" class="lemail">Adresse email :</label><br>
+                <input type="email" class="inputmail" id="email" name="email" placeholder="Saisissez votre email"><br>
+
+                <label for="motDePasse" id="mdp" class="lmdp">Mot de passe :</label>
+                <div class="spanFormShape" id="spanFormShape">
+                    <span class="span6" id="span6">Le mot de passe doit contenir :</span>
+                    <span class="spanForm" id="span7">min 8 caractères</span>
+                    <span class="spanForm" id="span8">1 majuscule</span>
+                    <span class="spanForm" id="span9">1 minuscule</span>
+                    <span class="spanForm" id="span10">1 chiffre</span>
+                    <span class="span11" id="span11">1 caractères spécial</span>
+                </div>
+                <div class="mdpForm" id="mdpForm">
+                    <input type="password" class="inputRegister" id="password" name="password" placeholder="Créer votre mot de passe">
+                    <label for="ConfirmationMotDePasse"></label>
+                    <input type="password" class="inputRegister" id="confirmPassword" name="confirmPassword" placeholder="Confirmer le mot de passe">
+                </div>
+                <input type="submit" value="Confirmer" class="inputConfirmer" id="Confirmer">
+                <div id="erreurCompletion" class="messageErreurCompletion"></div>
+                <div id="erreurLongueur" class="messageErreurLongueur"></div>
+                <div id="erreurFormatEmail" class="messageErreurFormatEmail"></div>
+                <div id="erreurFormatMdp" class="messageErreurFormatMdp"></div>
+                <div id="erreurSimilariteMdp" class="messageErreurSimilariteMdp"></div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer" id="footer">
+            <span class="span1" id="span1">NOUS SUIVRE</span>
+            <div class="logoReseaux" id="logoReseaux">
+                <img src="../images/facebook.png" class="facebook" id="facebook" alt="logo facebook">
+                <img src="../images/marque-x.png" class="X" id="X" alt="logo X">
+                <img src="../images/instagram.png" class="instagram" id="instagram" alt="logo instagram">
+                <img src="../images/youtube.png" class="youtube" id="youtube" alt="logo youtube">
+            </div>
+            <div>
+                <span class="spanIndex" id="span2">Contact | L'équipe | Informations légales | C.G.U | C.G.V | Modération | Politique de confidentialité | Cookies</span>
+            </div>
+            <span class="spanIndex" id="span3">Newsletter</span>
+        </div>
+    </footer>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
+  
