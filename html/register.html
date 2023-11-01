@@ -12,28 +12,25 @@
     <title>Register</title>
 </head>
 <body>
-    <header>
-        <a href="../index.html">
-            <div class="entete" id="entete">
-                <img src="../images/portal1.png" class="portal1" id="portal1" alt="portal orange">
-                <h1>PIXELPORTAL</h1>
-                <img src="../images/portal2.png" class="portal2" id="portal2" alt="portal blue">
-            </div>
-        </a>
-        <div class="header" id="header">Ajouter un compte</div>
-    </header>
-    <body>
+    <a href="../index.html">
+        <div class="entete" id="entete">
+            <img src="../images/portal1.png" class="portal1" id="portal1" alt="portal orange">
+            <h1>PIXELPORTAL</h1>
+            <img src="../images/portal2.png" class="portal2" id="portal2" alt="portal blue">
+        </div>
+    </a>
+    <div class="header" id="header">Ajouter un compte</div>
         <div class="backgroundFormRegister" id="backgroundFormRegister">
             <form action="#" method="post" class="formRegister" id="formRegister">
                 <label for="nom" id="lnom" class="lnom">Nom :</label>
                 <label for="prenom" id="lprenom" class="lprenom">Prenom :</label>
                 <div class="nomPrenomForm" id="nomPrenomForm">
-                    <input type="text" class="inputRegister" id="nom" name="nom" placeholder="Saisissez votre nom">
-                    <input type="text" class="inputPrenom" id="prenom" name="prenom" placeholder="Saisissez votre prenom">
+                    <input type="text" class="inputNom" id="nom" placeholder="Saisissez votre nom">
+                    <input type="text" class="inputPrenom" id="prenom" placeholder="Saisissez votre prenom">
                 </div>
           
                 <label for="email" id="lemail" class="lemail">Adresse email :</label><br>
-                <input type="email" class="inputmail" id="email" name="email" placeholder="Saisissez votre email"><br>
+                <input type="email" class="inputmail" id="email" placeholder="Saisissez votre email"><br>
     
                 <label for="motDePasse" id="mdp" class="lmdp">Mot de passe :</label>
                 <div class="spanFormShape" id="spanFormShape">
@@ -45,9 +42,8 @@
                     <span class="span11" id="span11">1 caractères spécial</span>
                 </div>
                 <div class="mdpForm" id="mdpForm">
-                    <input type="password" class="inputpwd" id="password" name="password" placeholder="Créer votre mot de passe">
-                    <label for="ConfirmationMotDePasse"></label>
-                    <input type="password" class="inputRegister" id="confirmPassword" name="confirmPassword" placeholder="Confirmer le mot de passe">
+                    <input type="password" class="inputPwd" id="password" placeholder="Créer votre mot de passe">
+                    <input type="password" class="inputConfirmPwd" id="confirmPassword" placeholder="Confirmer le mot de passe">
                 </div>
                 <input type="submit" value="Confirmer" class="inputConfirmer" id="Confirmer">
                 <div id="erreurCompletion" class="messageErreur"></div>
@@ -57,8 +53,7 @@
                 <div id="erreurSimilariteMdp" class="messageErreur"></div>
             </form>
         </div>
-    </body>
-    <footer>
+    <div class="footer" id="footer">
         <span class="span1" id="span1">NOUS SUIVRE</span>
         <div class="logoReseaux" id="logoReseaux">
             <img src="../images/facebook.png" class="facebook" id="facebook" alt="logo facebook">
@@ -67,8 +62,8 @@
             <img src="../images/youtube.png" class="youtube" id="youtube" alt="logo youtube">
         </div>
     <div class="mention" id="mention">Contact | L'équipe | Informations légales | C.G.U | C.G.V | Modération | Politique de confidentialité | Cookies | Newsletter</div>
-    </footer>
-    <script src="../javascript/script.js"></script>
+    </div>
+    <script src="../javascript/script(Fonction de vérification des informations du formulaire + stockage).js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
