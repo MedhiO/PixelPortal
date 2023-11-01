@@ -68,8 +68,8 @@ body {
     font-size: 5vh;                    /* Défini la taille de la police */
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
-/*Style du footer ******************************************************************************************************************************/
-footer{
+/* Style du footer ******************************************************************************************************************************/
+.footer{
     background-color: black;             /* Change la couleur du background en black */
     color: white;                       /* Change la couleur de la police */
     font-size: 24px;                     /* Défini la taille de la police */
