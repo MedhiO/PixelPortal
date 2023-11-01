@@ -1,0 +1,155 @@
+/* Style de l'entete ****************************************************************************************************************************/
+.entete{
+    display: flex;                           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;                    /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    align-items: center;                   /* Centre verticalement les elements HTML qui compose la flexbox */
+    justify-content: center;              /* Centre horizontalement les elements HTML qui compose la flexbox */
+    background-color: #18191b;         /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    font-size: 40px;                    /* Défini la taille de la police */
+    font-weight: bold;                 /* Défini la police en gras */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+/* Style des liens ******************************************************************************************************************************/
+a{
+    text-decoration: none; /* Desactive le soulignement des liens cliquable */
+    color: white;       /* Change la couleur du liens cliquable */
+}
+
+/* Style du header *****************************************************************************************************************************/
+.header{
+    background-color: black;             /* Change la couleur du background en black */
+    color: white;                       /* Change la couleur de la police */
+    font-weight: bold;                   /* Défini la police en gras */
+    font-size: 40px;                    /* Défini la taille de la police */
+    text-align: center;                /* Centre le texte horizontalement */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    margin-bottom: 5vh;
+}
+
+/* Style du body *****************************************************************************************************************************/
+body {
+    background-image: url(../images/203543.jpg); /* Défini le chemin de l'image de background */
+    background-repeat: no-repeat;                /* Indique qu'il ne faut pas repeter le background */
+    background-size: cover;                     /* Redimensionne l'image pour qu'elle tienne entierement dans la boite (element HTML) */
+ }
+
+/**/
+.backgroundFormRegister{
+    width: 71vh;
+    height: 71vh;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 2vh;
+    border-radius: 5vh;
+    color: white;
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+.lnom{
+    margin-left: 2vh;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.lprenom{
+    margin-left: 27vh;
+    padding-bottom: 1vh;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.lemail{
+    margin-top: 5vh;
+    margin-left: 2vh;
+    padding-bottom: 1vh;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.lmdp{
+    padding-bottom: 1vh;
+    margin-left: 2vh;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.spanForm{
+    font-size: 12px;
+}
+
+.span11{
+    font-size: 12px;
+}
+
+.span6{
+    padding-bottom: 1vh;
+}
+
+.inputmail{
+    margin-bottom: 5vh;
+}
+
+.spanFormShape{
+    margin-left: 2vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+.inputConfirmer{
+    margin-top: 5vh;
+    margin-left: 27vh;
+    background-color: #303236;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5vh;
+    padding: 1vh;
+}
+
+.inputPrenom{
+    background-color: #303236;
+    border-radius: 5vh;
+    height: 6vh;
+    margin-left: 1vh;
+}
+
+.inputmail{
+    background-color: #303236;
+    border-radius: 5vh;
+    height: 6vh;
+}
+
+.inputRegister{
+    background-color: #303236;
+    border-radius: 5vh;
+    height: 6vh;
+}
+
+.messageErreur{
+    font-style: italic;
+    color: red;
+}
+
+.inputpwd{
+    background-color: #303236;
+    border-radius: 5vh;
+    height: 6vh;
+}
+/*Style du footer ******************************************************************************************************************************/
+footer{
+    background-color: black;             /* Change la couleur du background en black */
+    color: white;                       /* Change la couleur de la police */
+    font-size: 24px;                     /* Défini la taille de la police */
+    text-align: center;                 /* Centre le texte horizontalement */
+    margin-top: 30vh;                  /* Défini la marge entre cette element et l'element qui se trouve au dessus */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+/* Style du span1 *******************************************************************************************************************************/
+.span1{
+    font-weight: bold;                 /* Défini la police en gras */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    font-size: 24px;                 /* Défini la taille de la police */
+}
