@@ -1,13 +1,13 @@
 /* Style de l'entete ****************************************************************************************************************************/
 .entete{
-    display: flex;                   /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
-    flex-direction: row;            /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
-    align-items: center;           /* Centre verticalement les elements HTML qui compose la flexbox */
-    justify-content: center;      /* Centre horizontalement les elements HTML qui compose la flexbox */
-    background-color: #18191b; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
-    font-size: 40px;            /* Défini la taille de la police */
-    font-weight: bold;         /* Défini la police en gras */
-    font-family: 'Inter', sans-serif;
+    display: flex;                           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;                    /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    align-items: center;                   /* Centre verticalement les elements HTML qui compose la flexbox */
+    justify-content: center;              /* Centre horizontalement les elements HTML qui compose la flexbox */
+    background-color: #18191b;         /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    font-size: 40px;                    /* Défini la taille de la police */
+    font-weight: bold;                 /* Défini la police en gras */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
 
 /* Style des liens ******************************************************************************************************************************/
@@ -16,89 +16,90 @@ a{
     color: white;       /* Change la couleur du liens cliquable */
 }
 
-/*Style du header *******************************************************************************************************************************/
+/* Style du header *****************************************************************************************************************************/
 .header{
-    background-color: black; /* Change la couleur du background en black */
-    color: white;           /* Change la couleur de la police */
-    font-weight: bold;       /* Défini la police en gras */
-    font-size: 40px;        /* Défini la taille de la police */
-    text-align: center;    /* Centre le texte horizontalement */
-    font-family: 'Inter', sans-serif; 
+    background-color: black;             /* Change la couleur du background en black */
+    color: white;                       /* Change la couleur de la police */
+    font-weight: bold;                   /* Défini la police en gras */
+    font-size: 40px;                    /* Défini la taille de la police */
+    text-align: center;                /* Centre le texte horizontalement */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
 
 /* Style boutonAccueil ***********************************************************************************************************************/
 .boutonAccueil{
     display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
     flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne vertical */
-    margin-top: 30vh;
+    margin-top: 30vh;      /* Défini la marge entre cette element et l'element qui se trouve au dessus */
 }
 
 /* Style boutonRegister ************************************************************************************************************************/
 .boutonRegister{
-    background-color: #ff3c00;
-    color: white;
-    font-weight: bold;
-    border-radius: 10vh;
-    border-color: #ff3c00;
-    padding: 1vh;
-    height: 10vh;
-    width: 50vh;
-    font-size: 40px;
-    font-family: 'Inter', sans-serif;
+    background-color: #ff3c00;               /* Change la couleur du background grace a la valeur indiqué apres le symbole #  */
+    color: white;                           /* Change la couleur de la police */
+    font-weight: bold;                       /* Défini la police en gras */
+    border-radius: 10vh;                    /* Défini l'arrondissement des bords de la bordure */
+    border-color: #ff3c00;               /* Défini la couleur du background du bouton register */
+    padding: 1vh;                         /* Défini le padding du bouton register */
+    height: 10vh;                        /* Défini la hauteur du bouton register */
+    width: 50vh;                        /* Défini la largeur du bouton register */
+    font-size: 40px;                   /* Défini la taille de la police */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
-/* Style boutonRegister ************************************************************************************************************************/
+/* Style boutonLogin ************************************************************************************************************************/
 .boutonLogin{
-    margin-top: 10vh;
-    background-color: #ff3c00;
-    color: white;
-    font-weight: bold;
-    border-radius: 10vh;
-    border-color: #ff3c00;
-    padding: 1vh;
-    height: 10vh;
-    width: 50vh;
-    font-size: 40px;
-    font-family: 'Inter', sans-serif;
+    margin-top: 10vh;                           /* Défini la marge entre cette element et l'element qui se trouve au dessus */
+    background-color: #ff3c00;               /* Change la couleur du background grace a la valeur indiqué apres le symbole #  */
+    color: white;                           /* Change la couleur de la police */
+    font-weight: bold;                       /* Défini la police en gras */
+    border-radius: 10vh;                    /* Défini l'arrondissement des bords de la bordure */
+    border-color: #ff3c00;               /* Défini la couleur du background du bouton login */
+    padding: 1vh;                         /* Défini le padding du bouton login */
+    height: 10vh;                        /* Défini la hauteur du bouton login */
+    width: 50vh;                        /* Défini la largeur du bouton login */
+    font-size: 40px;                   /* Défini la taille de la police */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
 /*Style du footer ******************************************************************************************************************************/
 footer{
-    background-color: black; /* Change la couleur du background en black */
-    color: white;           /* Change la couleur de la police */
-    font-size: 24px;         /* Défini la taille de la police */
-    text-align: center;     /* Centre le texte horizontalement */
-    margin-top: 30vh;
-    font-family: 'Inter', sans-serif;
+    background-color: black;             /* Change la couleur du background en black */
+    color: white;                       /* Change la couleur de la police */
+    font-size: 24px;                     /* Défini la taille de la police */
+    text-align: center;                 /* Centre le texte horizontalement */
+    margin-top: 30vh;                  /* Défini la marge entre cette element et l'element qui se trouve au dessus */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
 
 /* Style du span1 *******************************************************************************************************************************/
 .span1{
-    font-weight: bold; /* Défini la police en gras */
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
+    font-weight: bold;                 /* Défini la police en gras */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    font-size: 24px;                 /* Défini la taille de la police */
 }
 
 body {
-    background-image: url(../images/1203697.jpg);
+    background-image: url(../images/1203697.jpg); /* Défini le chemin de l'image de background */
     background-repeat: no-repeat;                /* Indique qu'il ne faut pas repeter le background */
     background-size: cover;                     /* Redimensionne l'image pour qu'elle tienne entierement dans la boite (element HTML) */
  }
 
+/* Style Responsive **************************************************************************************************************************/
  @media only screen and (min-width:601px) and (max-width:768px){
     .boutonAccueil{
-        margin-left: 10%;
+        margin-left: 10%; /*Défini la marge entre cette elenent et le premier element a sa gauche */
     }
 
     body{
-        background-image: url(../images/bgPortal.jpg);
+        background-image: url(../images/bgPortal.jpg); /* Défini le chemin de l'image de background */
     }
  }
  
  @media only screen and (max-width:600px){
     .boutonAccueil{
-        margin-left: 10%;
+        margin-left: 10%; /*Défini la marge entre cette elenent et le premier element a sa gauche */
     }
 
     body{
-        background-image: url(../images/bgPortal.jpg);
+        background-image: url(../images/bgPortal.jpg); /* Défini le chemin de l'image de background */
     }
  }
