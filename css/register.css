@@ -76,6 +76,12 @@ body {
     margin-left: 2vh;         /* Défini la marque comparer a l'element HTML de gauche */
 }
 
+/* Style conteneur label et input email ********************************************************************************************************/
+.shapeEmail{
+    display: flex;
+    flex-direction: column;
+}
+
 /* Style du label email ************************************************************************************************************************/
 .lemail{
     margin-top: 5vh;       /* Défini la marque comparer a l'element HTML du haut */
@@ -90,6 +96,7 @@ body {
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
     height: 6vh;               /* Défini la hauteur */
+    width: 67vh;
     margin-bottom: 5vh;       /* Défini la marque comparer a l'element HTML du bas */
 }
 
@@ -192,7 +199,7 @@ body {
     .inputmail{
         border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
         height: 3vh;       /* Défini la hauteur */
-        max-width: 25vh;  /* Défini la largeur max */
+        max-width: 53vh;  /* Défini la largeur max */
         font-size: 12px; /* Défini la taille de la police */
     }
 
@@ -246,7 +253,7 @@ body {
     .inputmail{
         border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
         height: 3vh;       /* Défini la hauteur */
-        max-width: 25vh;  /* Défini la largeur max */
+        max-width: 53vh;  /* Défini la largeur max */
         font-size: 12px; /* Défini la taille de la police */
     }
 

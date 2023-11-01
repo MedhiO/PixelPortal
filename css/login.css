@@ -1,0 +1,52 @@
+/* Style de l'entete ****************************************************************************************************************************/
+.entete{
+    display: flex;                           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;                    /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    align-items: center;                   /* Centre verticalement les elements HTML qui compose la flexbox */
+    justify-content: center;              /* Centre horizontalement les elements HTML qui compose la flexbox */
+    background-color: #18191b;         /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    font-size: 40px;                    /* Défini la taille de la police */
+    font-weight: bold;                 /* Défini la police en gras */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+/* Style des liens ******************************************************************************************************************************/
+a{
+    text-decoration: none; /* Desactive le soulignement des liens cliquable */
+    color: white;       /* Change la couleur du liens cliquable */
+}
+
+/* Style du header *****************************************************************************************************************************/
+.header{
+    background-color: black;             /* Change la couleur du background en black */
+    color: white;                       /* Change la couleur de la police */
+    font-weight: bold;                   /* Défini la police en gras */
+    font-size: 40px;                    /* Défini la taille de la police */
+    text-align: center;                /* Centre le texte horizontalement */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    margin-bottom: 5vh;              /* Défini la marque comparer a l'element HTML du bas */
+}
+
+/* Style du body *****************************************************************************************************************************/
+body {
+    background-image: url(../images/metalgearsolid.jpg);  /* Défini le chemin de l'image de background */
+    background-repeat: no-repeat;                        /* Indique qu'il ne faut pas repeter le background */
+    background-size: cover;                             /* Redimensionne l'image pour qu'elle tienne entierement dans la boite (element HTML) */
+ }
+
+ /* Style du footer ******************************************************************************************************************************/
+.footer{
+    background-color: black;             /* Change la couleur du background en black */
+    color: white;                       /* Change la couleur de la police */
+    font-size: 24px;                     /* Défini la taille de la police */
+    text-align: center;                 /* Centre le texte horizontalement */
+    margin-top: 30vh;                  /* Défini la marge entre cette element et l'element qui se trouve au dessus */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+/* Style du span1 *******************************************************************************************************************************/
+.span1{
+    font-weight: bold;                 /* Défini la police en gras */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    font-size: 24px;                 /* Défini la taille de la police */
+}
