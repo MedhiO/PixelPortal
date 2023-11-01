@@ -26,6 +26,14 @@ a{
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
 
+/* Style du body ********************************************************************************************************************************/
+body {
+    background-image: url(../images/1203697.jpg); /* Défini le chemin de l'image de background */
+    background-repeat: no-repeat;                /* Indique qu'il ne faut pas repeter le background */
+    background-size: cover;                     /* Redimensionne l'image pour qu'elle tienne entierement dans la boite (element HTML) */
+    transition: background-image 0.1s linear;  /* Ajoute une transition linéaire qui se fait en 0.1s */
+ }
+
 /* Style boutonAccueil ***********************************************************************************************************************/
 .boutonAccueil{
     display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
@@ -40,10 +48,10 @@ a{
     font-weight: bold;                       /* Défini la police en gras */
     border-radius: 10vh;                    /* Défini l'arrondissement des bords de la bordure */
     border-color: #ff3c00;               /* Défini la couleur du background du bouton register */
-    padding: 1vh;                         /* Défini le padding du bouton register */
+    padding: 2vh;                         /* Défini le padding du bouton register */
     height: 10vh;                        /* Défini la hauteur du bouton register */
     width: 50vh;                        /* Défini la largeur du bouton register */
-    font-size: 40px;                   /* Défini la taille de la police */
+    font-size: 5vh;                    /* Défini la taille de la police */
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
 /* Style boutonLogin ************************************************************************************************************************/
@@ -54,10 +62,10 @@ a{
     font-weight: bold;                       /* Défini la police en gras */
     border-radius: 10vh;                    /* Défini l'arrondissement des bords de la bordure */
     border-color: #ff3c00;               /* Défini la couleur du background du bouton login */
-    padding: 1vh;                         /* Défini le padding du bouton login */
+    padding: 2vh;                         /* Défini le padding du bouton login */
     height: 10vh;                        /* Défini la hauteur du bouton login */
     width: 50vh;                        /* Défini la largeur du bouton login */
-    font-size: 40px;                   /* Défini la taille de la police */
+    font-size: 5vh;                    /* Défini la taille de la police */
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
 /*Style du footer ******************************************************************************************************************************/
@@ -77,26 +85,20 @@ footer{
     font-size: 24px;                 /* Défini la taille de la police */
 }
 
-body {
-    background-image: url(../images/1203697.jpg); /* Défini le chemin de l'image de background */
-    background-repeat: no-repeat;                /* Indique qu'il ne faut pas repeter le background */
-    background-size: cover;                     /* Redimensionne l'image pour qu'elle tienne entierement dans la boite (element HTML) */
- }
-
 /* Style Responsive **************************************************************************************************************************/
- @media only screen and (min-width:601px) and (max-width:768px){
-    .boutonAccueil{
-        margin-left: 10%; /*Défini la marge entre cette elenent et le premier element a sa gauche */
+ @media only screen and (min-width:768px) and (max-width:1023px){ /* Défini le style responsive pour tablette */
+    body{
+       background-image: url(../images/bgPortal.jpg); /* Défini le chemin de l'image de background */
     }
 
-    body{
-        background-image: url(../images/bgPortal.jpg); /* Défini le chemin de l'image de background */
+    .boutonAccueil{
+        margin-left: 8vh; /*Défini la marge entre cette elenent et le premier element a sa gauche */
     }
  }
  
- @media only screen and (max-width:600px){
+ @media only screen and (max-width:767px){ /* Défini le style responsive pour smartphone */
     .boutonAccueil{
-        margin-left: 10%; /*Défini la marge entre cette elenent et le premier element a sa gauche */
+        margin-left: 8vh; /*Défini la marge entre cette elenent et le premier element a sa gauche */
     }
 
     body{

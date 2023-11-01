@@ -36,11 +36,11 @@ body {
 
 /**/
 .backgroundFormRegister{
-    width: 71vh;
-    height: 71vh;
+    width: 72vh;
+    height: 72vh;
     background: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
-    padding: 2vh;
+    padding: 1vh;
     border-radius: 5vh;
     color: white;
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
@@ -112,7 +112,6 @@ body {
     background-color: #303236;
     border-radius: 5vh;
     height: 6vh;
-    margin-left: 1vh;
 }
 
 .inputmail{
