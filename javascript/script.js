@@ -1,3 +1,6 @@
+// Variable pour suivre l'affichage du message d'erreur de complétion
+let completionErreurAffichee = false; 
+
 // Fonction de vérification des informations du formulaire + stockage de ces dernières une fois validé
 function verificationFormulaire() {
   let form = document.getElementById("formRegister");
@@ -17,10 +20,14 @@ function verificationFormulaire() {
     function validerCompletionFormulaire() {
       // Vérifie si les champs sont vides au moment de la soumission et affiche un message d'erreur le cas échéant
       if (champ1 === "" || champ2 === "" || champ3 === "" || champ4 === "" || champ5 === "") {
-        // Si au moins un champ est vide, affiche un message d'erreur
-        let messageErreur = document.getElementById("erreurCompletion");
-        messageErreur.style.display = "block";
-        messageErreur.innerHTML = "Tous les champs doivent être remplis.";
+        if (!completionErreurAffichee) {
+          // Si au moins un champ est vide et que le message d'erreur de complétion n'a pas été affiché, affiche un message d'erreur
+          let messageErreurCompletion = document.getElementById("erreurCompletion");
+          messageErreurCompletion.style.display = "block";
+          messageErreurCompletion.innerHTML = "Tous les champs doivent être remplis.";
+          // Marquer que le message d'erreur de complétion a été affiché
+          completionErreurAffichee = true;
+        }
         return false;
       }
       return true;
@@ -88,21 +95,18 @@ function verificationFormulaire() {
     if (!succes) {
       event.preventDefault();
     }
-    
+
     // Si toutes les validations sont réussies, enregistre les valeurs des champs dans le localStorage
     if (validerCompletionFormulaire() && validerLongueurNomPrenom() && validerFormatEmail() && validerFormatMdp() && validerSimilariteMdp()) {
-    // Enregistre les valeurs dans le localStorage
-    localStorage.setItem("nom", champ1);
-    localStorage.setItem("prenom", champ2);
-    localStorage.setItem("email", champ3);
-    localStorage.setItem("password", champ4);
-    
-    // Réinitialise le formulaire
-    form.reset();
+      // Enregistre les valeurs dans le localStorage
+      localStorage.setItem("nom", champ1);
+      localStorage.setItem("prenom", champ2);
+      localStorage.setItem("email", champ3);
+      localStorage.setItem("password", champ4);
 
-    // Redirige vers la page connexion.html
-    window.location.href = "../html/login.html";
+      form.reset();
 
+      window.location.href = "../html/login.html";
     }
   });
 }
@@ -115,7 +119,7 @@ function validationFormulaire(completionValide, longueurValide, emailValide, Mdp
   let isLongueurValide = longueurValide();
   let isEmailValide = emailValide();
   let isMdpValide = MdpValide();
-  let isMdpSimilaire = MdpSimilaire(); // Appel à la fonction de validation de similarité des mots de passe
+  let isMdpSimilaire = MdpSimilaire();
 
   if (!isCompletionValide || !isLongueurValide || !isEmailValide || !isMdpValide || !isMdpSimilaire) {
     validation = false;
