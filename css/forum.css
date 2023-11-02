@@ -1,0 +1,109 @@
+/* Style de l'entete ****************************************************************************************************************************/
+.entete{
+    display: flex;                           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;                    /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    align-items: center;                   /* Centre verticalement les elements HTML qui compose la flexbox */
+    justify-content: center;              /* Centre horizontalement les elements HTML qui compose la flexbox */
+    background-color: #18191b;         /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    font-size: 40px;                    /* Défini la taille de la police */
+    font-weight: bold;                 /* Défini la police en gras */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+/* Style des liens ******************************************************************************************************************************/
+a{
+    text-decoration: none; /* Desactive le soulignement des liens cliquable */
+    color: white;       /* Change la couleur du liens cliquable */
+}
+
+/* Style du header *****************************************************************************************************************************/
+.header{
+    background-color: black;             /* Change la couleur du background en black */
+    color: white;                       /* Change la couleur de la police */
+    font-weight: bold;                   /* Défini la police en gras */
+    font-size: 40px;                    /* Défini la taille de la police */
+    text-align: center;                /* Centre le texte horizontalement */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+/* Style du body ********************************************************************************************************************************/
+.bodyForum {
+    background-image: url(../images/darksoul.jpg); /* Défini le chemin de l'image de background */
+    background-repeat: no-repeat;                 /* Indique qu'il ne faut pas repeter le background */
+    background-size: cover;                      /* Redimensionne l'image pour qu'elle tienne entierement dans la boite (element HTML) */
+    transition: background-image 0.1s linear;   /* Ajoute une transition linéaire qui se fait en 0.1s */
+    display: flex;                             /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: column;                   /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne vertical */
+    color: white;                          /* Change la couleur de la police */
+ }
+
+/* Style de l'affichage des données *************************************************************************************************************/
+.affichageDonnees{
+    display: flex;                        /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;                 /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    justify-content: space-between;     /* Défini l'espacement de l'affichage des données */
+    font-weight: bold;                 /* Défini la police en gras */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+/* Style du background de la categories retro ***************************************************************************************************/
+.backgroundCategoriesRétro{
+    width: 50vh;                             /* Défini la largeur */
+    height: 25vh;                           /* Défini la hauteur */
+    background: rgba(0, 0, 0, 0.5);      /* Défini l'opacité */
+    padding: 1vh;                         /* Défini le rembourrage */
+    margin: 1vh;                         /* Défini la marge */
+    border-radius: 1vh;                 /* Défini le degré d'arrondissement du bord*/
+    color: white;                    /* Change la couleur de la police */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    font-weight: bold;               /* Défini la police en gras */
+}
+
+/* Style du background de la categories Général *************************************************************************************************/
+.backgroundCategoriesGénéral{
+    width: 50vh;                             /* Défini la largeur */
+    height: 25vh;                           /* Défini la hauteur */
+    background: rgba(0, 0, 0, 0.5);      /* Défini l'opacité */
+    padding: 1vh;                         /* Défini le rembourrage */
+    margin: 1vh;                         /* Défini la marge */
+    border-radius: 1vh;                 /* Défini le degré d'arrondissement du bord*/
+    color: white;                    /* Change la couleur de la police */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    font-weight: bold;               /* Défini la police en gras */
+}
+
+/* Style du background de la categories guerre **************************************************************************************************/
+.backgroundCategoriesGuerre{
+    width: 50vh;                             /* Défini la largeur */
+    height: 25vh;                           /* Défini la hauteur */
+    background: rgba(0, 0, 0, 0.5);      /* Défini l'opacité */
+    padding: 1vh;                         /* Défini le rembourrage */
+    margin: 1vh;                         /* Défini la marge */
+    border-radius: 1vh;                 /* Défini le degré d'arrondissement du bord*/
+    color: white;                    /* Change la couleur de la police */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    font-weight: bold;               /* Défini la police en gras */
+}
+
+/* Style du footer ******************************************************************************************************************************/
+.footer{
+    background-color: black;             /* Change la couleur du background en black */
+    color: white;                       /* Change la couleur de la police */
+    font-size: 24px;                     /* Défini la taille de la police */
+    text-align: center;                 /* Centre le texte horizontalement */
+    font-family: 'Inter', sans-serif;  /* Défini la famille de police */
+}
+
+/* Style du span1 *******************************************************************************************************************************/
+.span1{
+    font-weight: bold;                 /* Défini la police en gras */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    font-size: 24px;                 /* Défini la taille de la police */
+}
+
+/* Style Responsive **************************************************************************************************************************/
+ @media only screen and (max-width:767px){ /* Défini le style responsive pour smartphone */
+    .affichageDonnees{
+        font-size: 10px; /* Défini la taille de la police */
+    }
+ }
