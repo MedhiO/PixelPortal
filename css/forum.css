@@ -22,7 +22,7 @@ a{
     color: white;                       /* Change la couleur de la police */
     font-weight: bold;                   /* Défini la police en gras */
     font-size: 40px;                    /* Défini la taille de la police */
-    text-align: center;                /* Centre le texte horizontalement */
+    text-align: start;                /* Centre le texte horizontalement */
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
 

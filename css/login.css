@@ -31,7 +31,7 @@ a{
     background-image: url(../images/metalgearsolid.jpg);  /* Défini le chemin de l'image de background */
     background-repeat: no-repeat;                        /* Indique qu'il ne faut pas repeter le background */
     background-size: cover;                             /* Redimensionne l'image pour qu'elle tienne entierement dans la boite (element HTML) */
-    transition: background-image 0.1s linear;          /* Ajoute une transition linéaire qui se fait en 0.1s */
+    transition: background-image 0.5s linear;          /* Ajoute une transition linéaire qui se fait en 0.1s */
  }
 
 /* Forme du body *****************************************************************************************************************************/
@@ -64,14 +64,29 @@ a{
     margin: 1vh;                /* Défini la marge */
     width: 80vh;               /* Défini la largeur */
     height: 12vh;             /* Défini la hauteur */
+    border: none;
 }
 
+.input1{
+    background-color: #303236;
+    padding-left: 2vh;
+}
+
+.separateur{
+    padding: 1vh;
+}
 /* Style de l'input password *******************************************************************************************************************/
 .password2{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     margin: 1vh;                /* Défini la marge */
     width: 80vh;               /* Défini la largeur */
     height: 12vh;             /* Défini la hauteur */
+    border: none;
+}
+
+.input2{
+    background-color: #303236;
+    padding-left: 2vh;
 }
 
 /* Style du bouton valider *********************************************************************************************************************/
@@ -80,10 +95,13 @@ a{
     font-weight: bold;               /* Défini la police en gras */
     font-size: 5vh;                 /* Défini la taille de la police */
     background-color: #59B200;   /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
-    max-width: 80vh;              /* Défini la largeur max */ 
+    max-width: 40vh;              /* Défini la largeur max */ 
     color: white;              /* Change la couleur de la police */
     border-radius: 1vh;         /* Défini le degres d'arrondissement des bords */
-    padding: 1vh;              /* Défini le rembourrage */
+    padding: 2vh;              /* Défini le rembourrage */
+    margin-top: 5vh;
+    margin-left: 26vh;
+    border: none;
 }
 
 /* Style des messages d'erreur *******************************************************************************************************************/
@@ -115,11 +133,15 @@ a{
  .inputCréerCompte{
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
     font-weight: bold;               /* Défini la police en gras */
-    font-size: 2vh;                 /* Défini la taille de la police */
+    font-size: 3vh;                 /* Défini la taille de la police */
     background-color: #59B200;   /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     color: white;               /* Change la couleur de la police */
     border-radius: 1vh;          /* Défini le degrés d'arrondissement des bords*/
     padding: 1vh;               /* Défini le rembourrage */
+    border: none;
+    width: 40vh;              /* Défini la largeur max */ 
+    height: 10vh;
+    margin-top: 3vh;
 }
 
 /* Style du footer ******************************************************************************************************************************/
@@ -139,15 +161,28 @@ a{
 }
 
 /* Style Responsive **************************************************************************************************************************/
-@media only screen and (min-width:768px) and (max-width:1023px){ /* Défini le style responsive pour tablette */
+@media only screen and (min-width:768px) and (max-width:1500px){ /* Défini le style responsive pour tablette */
     .shapeBody{
        flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne vertical */
+    }
+
+    .shapeConnexion{
+        display: flex;
+        flex-direction: column;
     }
 
     .shapeCreerCompte{
         margin-left: 0;     /* Défini la marge avec le premier element a gauche */
         margin-top: 10vh;  /* Défini la marge avec le premier element en haut */
         color: #303236; /* Change la couleur de la police */
+     }
+
+     .input1{
+        width: 100vh;
+     }
+
+     .input2{
+        width: 100vh;
      }
  }
  
@@ -163,6 +198,14 @@ a{
     .email2{
         max-width: 50vh; /* Défini la largeur max */
     }
+
+    .input1{
+        width: 60vh;
+     }
+
+     .input2{
+        width: 60vh;
+     }
     
     .password2{
         max-width: 50vh; /* Défini la largeur max */
@@ -170,6 +213,8 @@ a{
 
     .inputValider{
         max-width: 50vh; /* Défini la largeur max */
+        margin-left: 0;
+
     }
 
     .shapeCreerCompte{
