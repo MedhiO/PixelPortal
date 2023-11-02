@@ -78,8 +78,8 @@ body {
 
 /* Style conteneur label et input email ********************************************************************************************************/
 .shapeEmail{
-    display: flex;
-    flex-direction: column;
+    display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
 }
 
 /* Style du label email ************************************************************************************************************************/
@@ -93,10 +93,10 @@ body {
 
 /* Style du champ email **************************************************************************************************************************/
 .inputmail{
-    background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
-    border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
-    height: 6vh;               /* Défini la hauteur */
-    width: 67vh;
+    background-color: #303236;  /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    border-radius: 5vh;          /* Défini l'arrondissement des bordures de l'input */
+    height: 6vh;                /* Défini la hauteur */
+    width: 67vh;               /* Défini la hauteur */
     margin-bottom: 5vh;       /* Défini la marque comparer a l'element HTML du bas */
 }
 
@@ -116,6 +116,7 @@ body {
     margin-bottom: 5vh;    /* Défini la marque comparer a l'element HTML du bas */
     font-size: 12px;      /* Défini la taille de la police */
 }
+
 /* Style du span6 *******************************************************************************************************************************/
 .span6{
     padding-bottom: 1vh; /* Défini le rembourrage */
@@ -172,7 +173,7 @@ body {
 }
 
 /* Style Responsive **************************************************************************************************************************/
-@media only screen and (min-width:768px) and (max-width:1023px){ /* Défini le style responsive pour tablette */
+@media only screen and (min-width:768px) and (max-width:1500px){ /* Défini le style responsive pour tablette */
     .backgroundFormRegister{
         width: 60vh;   /* Défini la largeur */
         height: 60vh; /* Défini la hauteur */
