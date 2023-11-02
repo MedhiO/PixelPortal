@@ -58,35 +58,39 @@ a{
     padding: 1vh;    /* Défini le rembourrage */
  }
 
-/* Style de l'input email ********************************************************************************************************************/
+/* Style de l'input email *****************************************************************************************/
  .email2{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     margin: 1vh;                /* Défini la marge */
     width: 80vh;               /* Défini la largeur */
     height: 12vh;             /* Défini la hauteur */
-    border: none;
+    border: none;            /* Supprime la bordure */
 }
 
+/* Style de l'input1 *********************************************************************************************/
 .input1{
-    background-color: #303236;
-    padding-left: 2vh;
+    background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    padding-left: 2vh;          /* Défini le rembourrage sur la gauche */
 }
 
+/* Style du separateur *******************************************************************************************/
 .separateur{
-    padding: 1vh;
+    padding: 1vh; /* Défini le rembourrage */
 }
+
 /* Style de l'input password *******************************************************************************************************************/
 .password2{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     margin: 1vh;                /* Défini la marge */
     width: 80vh;               /* Défini la largeur */
     height: 12vh;             /* Défini la hauteur */
-    border: none;
+    border: none;            /* Supprime la bordure */
 }
 
+/* Style de l'input2 ********************************************************************************************/
 .input2{
-    background-color: #303236;
-    padding-left: 2vh;
+    background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    padding-left: 2vh;          /* Défini le rembourrage sur la gauche */
 }
 
 /* Style du bouton valider *********************************************************************************************************************/
@@ -99,9 +103,9 @@ a{
     color: white;              /* Change la couleur de la police */
     border-radius: 1vh;         /* Défini le degres d'arrondissement des bords */
     padding: 2vh;              /* Défini le rembourrage */
-    margin-top: 5vh;
-    margin-left: 26vh;
-    border: none;
+    margin-top: 5vh;          /* Défini la marge par rapport a l'element du haut */
+    margin-left: 26vh;       /* Défini la marge par rapport a l'element du haut */
+    border: none;           /* Supprime la bordure */
 }
 
 /* Style des messages d'erreur *******************************************************************************************************************/
@@ -138,10 +142,10 @@ a{
     color: white;               /* Change la couleur de la police */
     border-radius: 1vh;          /* Défini le degrés d'arrondissement des bords*/
     padding: 1vh;               /* Défini le rembourrage */
-    border: none;
+    border: none;              /* Supprime la bordure */
     width: 40vh;              /* Défini la largeur max */ 
-    height: 10vh;
-    margin-top: 3vh;
+    height: 10vh;            /* Défini la hauteur */
+    margin-top: 3vh;        /* Défini la marge par rapport a l'element du haut */
 }
 
 /* Style du footer ******************************************************************************************************************************/
@@ -167,8 +171,8 @@ a{
     }
 
     .shapeConnexion{
-        display: flex;
-        flex-direction: column;
+        display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+        flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
     }
 
     .shapeCreerCompte{
@@ -178,11 +182,11 @@ a{
      }
 
      .input1{
-        width: 100vh;
+        width: 100vh; /* Défini la largeur */
      }
 
      .input2{
-        width: 100vh;
+        width: 100vh; /* Défini la largeur */
      }
  }
  
@@ -200,11 +204,11 @@ a{
     }
 
     .input1{
-        width: 60vh;
+        width: 60vh; /* Défini la largeur */
      }
 
      .input2{
-        width: 60vh;
+        width: 60vh; /* Défini la largeur */
      }
     
     .password2{
@@ -213,7 +217,7 @@ a{
 
     .inputValider{
         max-width: 50vh; /* Défini la largeur max */
-        margin-left: 0;
+        margin-left: 0; /* Défini la marge avec le premier element a gauche */
 
     }
 
