@@ -28,7 +28,7 @@ a{
 
 /* Style du body ********************************************************************************************************************************/
 body {
-    background-image: url(../images/portal.jpg); /* Défini le chemin de l'image de background */
+    background-image: url(../images/portal.jpg);  /* Défini le chemin de l'image de background */
     background-repeat: no-repeat;                /* Indique qu'il ne faut pas repeter le background */
     background-size: cover;                     /* Redimensionne l'image pour qu'elle tienne entierement dans la boite (element HTML) */
     transition: background-image 0.5s linear;  /* Ajoute une transition linéaire qui se fait en 0.1s */
