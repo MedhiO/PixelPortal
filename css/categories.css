@@ -16,6 +16,11 @@ a{
     color: white;       /* Change la couleur du liens cliquable */
 }
 
+body{
+    background-color: #22252a;
+    color: white;
+}
+
 /* Style du header **********************************************************************************************/
 .header{
     background-color: black;              /* Change la couleur du background en black */
