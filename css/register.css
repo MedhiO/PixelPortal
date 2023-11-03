@@ -58,6 +58,7 @@ body {
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
     height: 6vh;               /* Défini la hauteur */
+    color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
 /* Style du label prenom ************************************************************************************************************************/
@@ -74,6 +75,7 @@ body {
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
     height: 6vh;               /* Défini la hauteur */
     margin-left: 2vh;         /* Défini la marque comparer a l'element HTML de gauche */
+    color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
 /* Style conteneur label et input email ********************************************************************************************************/
@@ -98,6 +100,7 @@ body {
     height: 6vh;                /* Défini la hauteur */
     width: 67vh;               /* Défini la hauteur */
     margin-bottom: 5vh;       /* Défini la marque comparer a l'element HTML du bas */
+    color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
 /* Style du label mot de passe *******************************************************************************************************************/
@@ -127,6 +130,7 @@ body {
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
     height: 6vh;               /* Défini la hauteur */
+    color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
 /* Style du champ Confirmation password ********************************************************************************************************/
@@ -135,6 +139,11 @@ body {
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
     height: 6vh;               /* Défini la hauteur */
     margin-left: 2vh;         /* Défini la marque comparer a l'element HTML de gauche */
+    color: #fd6d14;         /* Défini le changement de couleur de la police */
+}
+
+.inputConfirmPwd::placeholder{
+    color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
 /* Style du bouton confirmer *********************************************************************************************************************/
