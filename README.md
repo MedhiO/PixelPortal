@@ -4,7 +4,7 @@
 [Link to Figma Model](https://www.figma.com/file/Wam2L0PtdLVVDt7EfQ4Pn5/PixelPortal?type=design&node-id=0%3A1&mode=design&t=U3ePBXSAjoJzV03k-1)
 
 **Here's the link to clone it from Github**:
-[Link to GitHub Repository](https://github.com/MedhiO/Forum-Eval1.git)
+[Link to GitHub Repository](https://github.com/MedhiO/PixelPortal.git)
 
 And finally, here's the site description:
 
