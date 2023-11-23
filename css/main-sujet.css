@@ -1,0 +1,112 @@
+/* Style du main ****************************************************************************************************/
+main{
+    background-color: #22252a; /* Défini la couleur du background */
+    color: white;             /* Défini la couleur de la police */
+    font-weight: bold;         /* Défini la police en gras */
+}
+
+/* Style du deconnexion */
+.deconnexion{
+    display: flex;                /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row-reverse; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    cursor: pointer;            /* Modifie le curseur au moment du survol de la zone deconnnexion */
+}
+
+/* Style de l'affichage des données */
+.affichageDonnees{
+    display: flex;                        /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;                 /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    justify-content: space-between;     /* Défini l'espacement de l'affichage des données */
+    font-weight: bold;                 /* Défini la police en gras */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+/* Style de la liste des sujets */
+.listeSujet{
+    margin-left: 50px;   /* Défini la marge vers la gauche */
+    margin-right: 50px; /* Défini la marge vers la droite */
+}
+
+/* Style de l'entete du tableau */
+.thead{
+    display: flex;                    /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;             /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    justify-content: space-between; /* Défini l'espacement de l'affichage des données */
+    background-color: #272a30;   /* Défini la couleur du background */
+    font-size: 2.5em;             /* Défini la taille de la police */
+    margin-top: 20px;            /* Défini la marge vers le haut */
+    margin-left: 50px;          /* Défini la marge vers la gauche */
+    margin-right: 50px;        /* Défini la marge vers la droite */
+}
+
+/* Style du titre h2C */
+.h2C{
+    margin-left: 50px;   /* Défini la marge vers la gauche */
+    font-size: 40px;    /* Défini la taille de la police */
+    font-weight: bold; /* Défini la police en gras */
+}
+
+/* Style de la div nouveau sujet */
+.nouveauSujet{
+    display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne verticalement */
+    margin-left: 50px;     /* Défini la marge vers la gauche */
+    margin-right: 50px;   /* Défini la marge vers la droite */
+}
+
+/* Style de la div boutonCategories */
+.boutonCategories{
+    margin-left: 50px;                  /* Défini la marge vers la gauche */
+    margin-top: 10px;                  /* Défini la marge vers le haut */
+    margin-bottom: 10px;              /* Défini la marge vers le bas */
+    display: flex;                   /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    justify-content: space-between; /*Défini l'espacement entre les elements de la flexbox */
+}
+
+/* Style de l'input sujetTitre */
+.sujetTitre{
+    background-color: #2e3238; /* Défini la couleur du background */
+    margin-bottom: 10px;        /* Défini la marge vers le bas */
+    border: none;              /* Supprime les bordures */
+    height: 72px;             /* Défini la hauteur */
+}
+
+/* Style de l'input text aera */
+.textaera{
+    background-color: #2e3238; /* Défini la couleur du background */
+    border: none;               /* Supprime les bordures */
+    margin-bottom: 10px;       /* Défini la marge vers le bas */
+    height: 142px;            /* Défini la hauteur */
+}
+
+/* Style du bouton créerSujet */
+.creerSujet{
+    background-color: #F7734A;  /* Défini la couleur du background */
+    border-radius: 10px;         /* Défini le degré d'arondissement de la bordure */
+    border: none;               /* Supprime les bordures */
+    color: white;            /* Défini le couleur de la police */
+    font-weight: bold;        /* Défini la police en gras */
+    font-size: 40px;         /* Défini la taille de la police */
+}
+
+/* Style du bouton retour a la liste des categories */
+.creerSujet2{
+    background-color: #F7734A; /* Défini la couleur du background */
+    border-radius: 5px;         /* Défini le degré d'arondissement de la bordure */
+    border: none;              /* Supprime les bordures */
+    color: white;           /* Défini le couleur de la police */
+    font-weight: bold;       /* Défini la police en gras */
+    font-size: 20px;        /* Défini la taille de la police */
+    margin-right: 50px;    /* Défini la marge vers la droite */
+}
+
+/* Style Responsive **************************************************************************************************************************/
+@media only screen and (max-width:767px){ /* Défini le style responsive pour smartphone */
+    .header{
+        font-size: 24px; /* Défini la taille de la police */
+    }
+
+    .affichageDonnees{
+        font-size: 10px; /* Défini la taille de la police */
+    }
+ }

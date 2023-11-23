@@ -1,0 +1,64 @@
+/* Style du main ****************************************************************************************************************************/
+main{
+    background-image: url('../images/darksoul.jpg');       /* Défini le chemin de l'image de background */
+    background-size: cover;                               /* Redimensionne l'image pour qu'elle tienne entierement dans l'element HTML qui la contient */
+    background-position: center top;                     /* Centre le fond d'ecran */
+    background-repeat: no-repeat;                       /* Indique qu'il ne faut pas repeter le fond */
+    height: 87vh;                                      /* Défini la hauteur du fond */
+    width: 100%;                                      /* Défini la largeur du fond */
+    color: white;                                  /* Défini la couleur de la police */
+}
+
+/* Style des titres h1 */
+h1{
+    padding: 1vh; /* Défini le padding des titres h1 */
+}
+
+/* Style de l'affichage des données */
+.affichageDonnees{
+    display: flex;                        /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;                 /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    justify-content: space-between;     /* Défini l'espacement de l'affichage des données */
+    font-weight: bold;                 /* Défini la police en gras */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}
+
+/* Style du background de la categories retro */
+.backgroundCategoriesRétro{
+    width: 50vh;                             /* Défini la largeur */
+    height: 25vh;                           /* Défini la hauteur */
+    background: rgba(0, 0, 0, 0.5);      /* Défini l'opacité */
+    padding: 1vh;                         /* Défini le rembourrage */
+    margin: 1vh;                         /* Défini la marge */
+    border-radius: 1vh;                 /* Défini le degré d'arrondissement du bord*/
+    color: white;                    /* Change la couleur de la police */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    font-weight: bold;               /* Défini la police en gras */
+}
+
+/* Style du background de la categories Général */
+.backgroundCategoriesGénéral{
+    width: 50vh;                             /* Défini la largeur */
+    height: 25vh;                           /* Défini la hauteur */
+    background: rgba(0, 0, 0, 0.5);      /* Défini l'opacité */
+    padding: 1vh;                         /* Défini le rembourrage */
+    margin: 1vh;                         /* Défini la marge */
+    border-radius: 1vh;                 /* Défini le degré d'arrondissement du bord*/
+    color: white;                    /* Change la couleur de la police */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    font-weight: bold;               /* Défini la police en gras */
+}
+
+/* Style du background de la categories guerre */
+.backgroundCategoriesGuerre{
+    width: 50vh;                             /* Défini la largeur */
+    height: 25vh;                           /* Défini la hauteur */
+    background: rgba(0, 0, 0, 0.5);      /* Défini l'opacité */
+    padding: 1vh;                         /* Défini le rembourrage */
+    margin: 1vh;                         /* Défini la marge */
+    border-radius: 1vh;                 /* Défini le degré d'arrondissement du bord*/
+    color: white;                    /* Change la couleur de la police */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+    font-weight: bold;               /* Défini la police en gras */
+}
+

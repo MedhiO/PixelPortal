@@ -1,90 +1,71 @@
-/* Style de l'entete ****************************************************************************************************************************/
-.entete{
-    display: flex;                           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
-    flex-direction: row;                    /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
-    align-items: center;                   /* Centre verticalement les elements HTML qui compose la flexbox */
-    justify-content: center;              /* Centre horizontalement les elements HTML qui compose la flexbox */
-    background-color: #18191b;         /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
-    font-size: 40px;                    /* Défini la taille de la police */
-    font-weight: bold;                 /* Défini la police en gras */
-    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+/* Style du main ****************************************************************************************************/
+main{
+    background-image: url('../images/skyrim.jpg'); /* Défini le chemin de l'image de background */
+    background-size: cover;                       /* Redimensionne l'image pour qu'elle tienne entierement dans l'element HTML qui la contient */
+    background-position: center center;          /* Centre le fond d'ecran */
+    background-repeat: no-repeat;               /* Indique qu'il ne faut pas repeter le fond */
+    height: 80vh;                              /* Défini la hauteur du fond */
+    width: 100%;                              /* Défini la largeur du fond */
 }
 
-/* Style des liens ******************************************************************************************************************************/
-a{
-    text-decoration: none; /* Desactive le soulignement des liens cliquable */
-    color: white;       /* Change la couleur du liens cliquable */
-}
-
-/* Style du header *****************************************************************************************************************************/
-.header{
-    background-color: black;             /* Change la couleur du background en black */
-    color: white;                       /* Change la couleur de la police */
-    font-weight: bold;                   /* Défini la police en gras */
-    font-size: 40px;                    /* Défini la taille de la police */
-    text-align: center;                /* Centre le texte horizontalement */
-    font-family: 'Inter', sans-serif; /* Défini la famille de police */
-    margin-bottom: 5vh;              /* Défini la marque comparer a l'element HTML du bas */
-}
-
-/* Style du body *****************************************************************************************************************************/
-body {
-    background-image: url(../images/skyrim.jpg);  /* Défini le chemin de l'image de background */
-    background-repeat: no-repeat;                /* Indique qu'il ne faut pas repeter le background */
-    background-size: cover;                     /* Redimensionne l'image pour qu'elle tienne entierement dans la boite (element HTML) */
- }
-
-/* Style du formulaire *********************************************************************************************************************/
+/* Style du formulaire */
 .backgroundFormRegister{
-    width: 72vh;                             /* Défini la largeur */
-    height: 70vh;                           /* Défini la hauteur */
-    background: rgba(0, 0, 0, 0.5);      /* Défini la couleur et l'opacité */
-    margin: 0 auto;                       /* Centre le formulaire */
-    padding: 1vh;                        /* Défini le rembourrage */
+    width: 60vh;                              /* Défini la largeur */
+    height: 70vh;                            /* Défini la hauteur */
+    background: rgba(0, 0, 0, 0.5);       /* Défini la couleur et l'opacité */
+    margin: 0 auto;                        /* Centre le formulaire */
+    padding: 1vh;                         /* Défini le rembourrage */
+    margin-top: 2vh;                     /* Défini la marge vers le haut */
     border-radius: 5vh;                 /* Défini l'arrondissement des bordures du formulaire */
     color: white;                    /* Défini la couleur de la police */
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
 
-/* Style du label nom ************************************************************************************************************************/
+/* Style du label nom */
 .lnom{
     margin-left: 2vh;   /* Défini la marque comparer a l'element HTML de gauche */
     font-weight: bold; /* Défini la police en gras */
     font-size: 15px;  /* Défini la taille de la police */
 }
 
-/* Style du champ nom **************************************************************************************************************************/
+/* Style du champ nom */
 .inputNom{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
     height: 6vh;               /* Défini la hauteur */
+}
+
+.inputNom::placeholder{
     color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
-/* Style du label prenom ************************************************************************************************************************/
+/* Style du label prenom */
 .lprenom{
-    margin-left: 28vh;    /* Défini la marque comparer a l'element HTML de gauche */
+    margin-left: 22vh;    /* Défini la marque comparer a l'element HTML de gauche */
     padding-bottom: 1vh; /* Défini le rembourrage */
     font-weight: bold;  /* Défini la police en gras */
     font-size: 15px;   /* Défini la taille de la police */
 }
 
-/* Style du champ Prenom *************************************************************************************************************************/
+/* Style du champ Prenom */
 .inputPrenom{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
     height: 6vh;               /* Défini la hauteur */
     margin-left: 2vh;         /* Défini la marque comparer a l'element HTML de gauche */
+}
+
+.inputPrenom::placeholder{
     color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
-/* Style conteneur label et input email ********************************************************************************************************/
+/* Style conteneur label et input email */
 .shapeEmail{
     display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
     flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
 }
 
-/* Style du label email ************************************************************************************************************************/
+/* Style du label email */
 .lemail{
     margin-top: 5vh;       /* Défini la marque comparer a l'element HTML du haut */
     margin-left: 2vh;     /* Défini la marque comparer a l'element HTML de gauche */
@@ -93,17 +74,20 @@ body {
     font-size: 15px;   /* Défini la taille de la police */
 }
 
-/* Style du champ email **************************************************************************************************************************/
+/* Style du champ email */
 .inputmail{
     background-color: #303236;  /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;          /* Défini l'arrondissement des bordures de l'input */
     height: 6vh;                /* Défini la hauteur */
-    width: 67vh;               /* Défini la hauteur */
+    width: 52vh;               /* Défini la largeur */
     margin-bottom: 5vh;       /* Défini la marque comparer a l'element HTML du bas */
+}
+
+.inputmail::placeholder{
     color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
-/* Style du label mot de passe *******************************************************************************************************************/
+/* Style du label mot de passe */
 .lmdp{
     padding-bottom: 1vh; /* Défini le rembourrage vers le bas */
     margin-left: 2vh;   /* Défini la marque comparer a l'element HTML de gauche */
@@ -111,7 +95,7 @@ body {
     font-size: 15px;  /* Défini la taille de la police */
 }
 
-/* Style des span lié aux mot de passe **********************************************************************************************************/
+/* Style des span lié aux mot de passe */
 .spanFormShape{
     margin-left: 2vh;         /* Défini la marque comparer a l'element HTML de gauche */
     display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
@@ -120,36 +104,38 @@ body {
     font-size: 12px;      /* Défini la taille de la police */
 }
 
-/* Style du span6 *******************************************************************************************************************************/
+/* Style du span6 */
 .span6{
     padding-bottom: 1vh; /* Défini le rembourrage */
 }
 
-/* Style du champ password *********************************************************************************************************************/
+/* Style du champ password */
 .inputPwd{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
     height: 6vh;               /* Défini la hauteur */
+}
+
+.inputPwd::placeholder{
     color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
-/* Style du champ Confirmation password ********************************************************************************************************/
+/* Style du champ Confirmation password */
 .inputConfirmPwd{
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     border-radius: 5vh;         /* Défini l'arrondissement des bordures de l'input */
     height: 6vh;               /* Défini la hauteur */
     margin-left: 2vh;         /* Défini la marque comparer a l'element HTML de gauche */
-    color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
 .inputConfirmPwd::placeholder{
     color: #fd6d14;         /* Défini le changement de couleur de la police */
 }
 
-/* Style du bouton confirmer *********************************************************************************************************************/
+/* Style du bouton confirmer */
 .inputConfirmer{
     margin-top: 5vh;               /* Défini la marge par rapport a l'element du haut */
-    margin-left: 27vh;            /* Défini la marge par rapport a l'element de gauche */
+    margin-left: 20vh;            /* Défini la marge par rapport a l'element de gauche */
     background-color: #303236; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
     color: white;             /* Change la couleur de la police */
     font-weight: bold;         /* Défini la police en gras */
@@ -158,13 +144,13 @@ body {
     padding: 1vh;           /* Défini le rembourrage */
 }
 
-/* Style des messages d'erreur *******************************************************************************************************************/
+/* Style des messages d'erreur */
 .messageErreur{
     font-style: italic; /* Défini le style de la police sur italique */
     color: red;      /* Change la couleur de la police */
 }
 
-/* Style du footer ******************************************************************************************************************************/
+/* Style du footer */
 .footer{
     background-color: black;             /* Change la couleur du background en black */
     color: white;                       /* Change la couleur de la police */
@@ -174,7 +160,7 @@ body {
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
 }
 
-/* Style du span1 *******************************************************************************************************************************/
+/* Style du span1 */
 .span1{
     font-weight: bold;                 /* Défini la police en gras */
     font-family: 'Inter', sans-serif; /* Défini la famille de police */
@@ -182,9 +168,9 @@ body {
 }
 
 /* Style Responsive **************************************************************************************************************************/
-@media only screen and (min-width:768px) and (max-width:1500px){ /* Défini le style responsive pour tablette */
+@media only screen and (min-width:768px) and (max-width:1023px){ /* Défini le style responsive pour tablette */
     .backgroundFormRegister{
-        width: 60vh;   /* Défini la largeur */
+        width: 45vh;   /* Défini la largeur */
         height: 60vh; /* Défini la hauteur */
     }
 
@@ -203,13 +189,13 @@ body {
     }
 
     .lprenom{
-        margin-left: 20vh; /* Défini la marque comparer a l'element HTML de gauche */
+        margin-left: 15vh; /* Défini la marque comparer a l'element HTML de gauche */
     }
 
     .inputmail{
         border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
         height: 3vh;       /* Défini la hauteur */
-        max-width: 53vh;  /* Défini la largeur max */
+        max-width: 40vh;  /* Défini la largeur max */
         font-size: 12px; /* Défini la taille de la police */
     }
 
@@ -228,7 +214,7 @@ body {
     }
 
     .inputConfirmer{
-        margin-left: 20vh;   /* Défini la marque comparer a l'element HTML de gauche */
+        margin-left: 17vh;   /* Défini la marque comparer a l'element HTML de gauche */
         font-size: 12px;    /* Défini la taille de la police */
         height: 3vh;       /* Défini la hauteur */
         max-width: 25vh;  /* Défini la largeur max */
@@ -238,7 +224,7 @@ body {
  
  @media only screen and (max-width:767px){ /* Défini le style responsive pour smartphone */
     .backgroundFormRegister{
-        width: 60vh;   /* Défini la largeur */
+        width: 45vh;   /* Défini la largeur */
         height: 60vh; /* Défini la hauteur */
     }
 
@@ -257,13 +243,13 @@ body {
     }
 
     .lprenom{
-        margin-left: 20vh; /* Défini la marque comparer a l'element HTML de gauche */
+        margin-left: 15vh; /* Défini la marque comparer a l'element HTML de gauche */
     }
 
     .inputmail{
         border-radius: 2vh; /* Défini l'arrondissement des bordures de l'input */
         height: 3vh;       /* Défini la hauteur */
-        max-width: 53vh;  /* Défini la largeur max */
+        max-width: 40vh;  /* Défini la largeur max */
         font-size: 12px; /* Défini la taille de la police */
     }
 
@@ -282,7 +268,7 @@ body {
     }
 
     .inputConfirmer{
-        margin-left: 20vh;   /* Défini la marque comparer a l'element HTML de gauche */
+        margin-left: 17vh;   /* Défini la marque comparer a l'element HTML de gauche */
         font-size: 12px;    /* Défini la taille de la police */
         height: 3vh;       /* Défini la hauteur */
         max-width: 25vh;  /* Défini la largeur max */

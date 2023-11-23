@@ -1,0 +1,46 @@
+/* Style du header ************************************************************************************************************************/
+header {
+    color: white;      /* Change la couleur de la police en blanc */
+    font-size: 2.5em;   /* Défini la taille de la police */
+    font-weight: bold; /* Défini la police en gras */
+}
+/* Style de l'entete */
+.entete{
+    background-color: #18191b; /* Change la couleur du background grace a la valeur indiqué apres le symbole # */
+    display: flex;              /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;       /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    align-items: center;      /* Centre verticalement les elements HTML qui compose la flexbox */
+    justify-content: center; /* Centre horizontalement les elements HTML qui compose la flexbox */
+    color: white;         /* Défini la couleur de la police */
+}
+/* Style des liens */
+a{
+    text-decoration: none; /* Supprime la ligne sous les liens */
+    color: #7DC3F7;     /* Change la couleur des liens en blanc */
+}
+/* Style du descriptif */
+.descriptif{
+    background-color: black;          /* Change la couleur du fond en noir */
+    text-align: start;                 /* Centre horizontalement le texte */
+    display: flex;                    /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row;             /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal */
+    justify-content: space-between; /* Défini un espace entre les elements de la flexbox */
+    cursor: pointer;               /* Change le curseur lors du survol */
+}
+
+.deconnexion{
+    display: flex;                /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: row-reverse; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne horizontal inversé */
+}
+/* Style Responsive **************************************************************************************************************************/
+@media only screen and (min-width:768px) and (max-width:1023px){ /* Défini le style responsive pour tablette */
+    header{
+        font-size: 1.563em; /* Défini la taille de la police */
+    }
+ }
+
+ @media only screen and (max-width:767px){ /* Défini le style responsive pour smartphone */
+    header{
+        font-size: 1.563em; /* Défini la taille de la police */
+    }
+ }

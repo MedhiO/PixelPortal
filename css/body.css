@@ -1,0 +1,6 @@
+/* Style du body **************************************************************************************************************************/
+body {
+    display: flex;                      /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: column;            /* Indique que l'alignement des elements HTML qui compose la flexbox se fait en ligne vertical */
+    font-family: 'Inter', sans-serif; /* Défini la famille de police */
+}

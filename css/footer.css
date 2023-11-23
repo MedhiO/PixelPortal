@@ -1,0 +1,24 @@
+/* Style du footer ************************************************************************************************************************/
+footer{
+    background-color: black; /* Change la couleur du background en black */
+    color: white;           /* Change la couleur de la police */
+    font-size: 1.5em;        /* Défini la taille de la police */
+    text-align: center;     /* Centre le texte horizontalement */
+}
+/* Style Nous suivre */
+.nousSuivre{
+    font-weight: bold; /* Défini la police en gras */
+    padding-top: 1vh; /* Défini le rembourrage vers le haut */
+}
+/* Style Responsive **************************************************************************************************************************/
+@media only screen and (min-width:768px) and (max-width:1023px){ /* Défini le style responsive pour tablette */
+    footer{
+        font-size: 0.938em; /* Défini la taille de la police */
+    }
+ }
+
+ @media only screen and (max-width:767px){ /* Défini le style responsive pour smartphone */
+    footer{
+        font-size: 0.938em; /* Défini la taille de la police */
+    }
+ }

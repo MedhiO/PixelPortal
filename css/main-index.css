@@ -1,0 +1,57 @@
+/* Style du main ****************************************************************************************************************************/
+main{
+    background-image: url('../images/portal.jpg'); /* Défini le chemin de l'image de background */
+    background-size: cover;                       /* Redimensionne l'image pour qu'elle tienne entierement dans l'element HTML qui la contient */
+    background-position: center center;          /* Centre le fond d'ecran */
+    background-repeat: no-repeat;               /* Indique qu'il ne faut pas repeter le fond */
+    height: 78vh;                              /* Défini la hauteur du fond */
+    width: 100%;                              /* Défini la largeur du fond */
+}
+/* Style bouton accueil */
+.boutonAccueil{
+    display: flex;           /* Appelle de la flexbox afin d'ordonner les elements qui la compose */
+    flex-direction: column; /* Indique que l'alignement des elements HTML qui compose la flexbox doit se faire en ligne vertical */
+    margin-top: 20vh;      /* Défini la marge comparer a l'element du haut */
+}
+/* Style bouton register */
+.boutonRegister{
+    background-color: #ff3c00; /* Change la couleur du background grace a la valeur indiqué apres le symbole #  */
+    color: white;             /* Change la couleur de la police */
+    font-weight: bold;         /* Défini la police en gras */
+    border-radius: 3.125em;   /* Défini le degrés d'arrondissement des bords de la bordure */
+    border-color: #ff3c00; /* Défini la couleur de la bordure du bouton */
+    padding: 0.5em;         /* Défini le rembourrage du bouton */
+    width: auto;           /* Défini la largeur */
+    font-size: 2em;       /* Défini la taille de la police */
+    margin-top: 1em;     /* Défini la marge comparer a l'element du haut */
+}
+/* Style bouton login */
+.boutonLogin{
+    background-color: #ff3c00; /* Change la couleur du background grace a la valeur indiqué apres le symbole #  */
+    color: white;             /* Change la couleur de la police */
+    font-weight: bold;         /* Défini la police en gras */
+    border-radius: 3.125em;   /* Défini le degrés d'arrondissement des bords de la bordure */
+    border-color: #ff3c00; /* Défini la couleur de la bordure du bouton */
+    padding: 0.5em;         /* Défini le rembourrage du bouton */
+    width: auto;           /* Défini la largeur */
+    font-size: 2em;       /* Défini la taille de la police */
+    margin-top: 1em;     /* Défini la marge comparer a l'element du haut */
+}
+/* Style Responsive **************************************************************************************************************************/
+@media only screen and (min-width:768px) and (max-width:1023px){ /* Défini le style responsive pour tablette */
+    .boutonRegister{
+        font-size: 1.25em; /* Défini la taille de la police */
+    }
+    .boutonLogin{
+        font-size: 1.25em; /* Défini la taille de la police */
+    }
+ }
+
+ @media only screen and (max-width:767px){ /* Défini le style responsive pour smartphone */
+    .boutonRegister{
+        font-size: 1.25em; /* Défini la taille de la police */
+    }
+    .boutonLogin{
+        font-size: 1.25em; /* Défini la taille de la police */
+    }
+ }
