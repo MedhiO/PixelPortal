@@ -3,55 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Défini le lien vers la ressources externe bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Défini le lien vers la ressources externe reset.css -->
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/accueil.css">
-    <title>Sujet</title>
+    <!-- Défini le lien vers la ressources externe body.css -->
+    <link rel="stylesheet" href="../css/body.css">
+    <!-- Défini le lien vers la ressources externe header.css -->
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- Défini le lien vers la ressources externe main-sujet.css -->
+    <link rel="stylesheet" href="../css/main-sujet.css">
+    <!-- Défini le lien vers la ressources externe footer.css -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- Défini le lien vers la ressources externe google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Défini le lien vers la ressources externe google font pour la police inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Accueil</title>
 </head>
 <body>
-    <a href="../index.html">
-        <div class="entete" id="entete">
-            <img src="../images/portal1-removebg-preview.png" class="portal1" id="portal1" alt="portal blue">
-            <h1>PIXELPORTAL</h1>
-            <img src="../images/portal2-removebg-preview.png" class="portal2" id="portal2" alt="portal orange">
-        </div>
-    </a>
+    <!-- Défini le contenu du header -->
     <header>
-        <div class="header" id="header">Sujet</div>
+        <a href="../index.html">
+            <div class="entete" id="entete">
+                <img src="../images/portal1.png" id="portal1" class="img-fluid" alt="portal orange">
+                <h1>PIXELPORTAL</h1>
+                <img src="../images/portal2.png" id="portal2" class="img-fluid" alt="portal blue">
+            </div>
+        </a>
+        <div class="descriptif" id="descriptif">Sujet</div>
     </header>
-    <div class="affichageDonnees" id="affichageDonnees"><div class="affichagePrenom" id="affichagePrenom"></div><div class="affichageDate" id="affichageDate"></div><div class="affichageHeureConnexion" id="affichageHeureConnexion"></div></div>
-    <div class="bodyCategories" id="bodyCategories">
-        <h1 class="h1C" id="h1C">Sujets</h1>
-        <div class="listeSujet" id="listeSujet"></div>
-        <div class="nouveauSujet" id="nouveauSujet">
-          <h2 class="h2C" id="h2C">Repondre</h2>
-          <input type="text" class="sujetTitre" id="sujetTitre" placeholder="Titre du Sujet">
-          <textarea id="sujetMessage" placeholder="Message du Sujet"></textarea>
-          <button class="creerSujet" id="creerSujet">POSTER</button>
-          <a href="Categories.html"><button class="creerSujet" id="creerSujet">Retour a la liste des sujets</button></a>
+    <!-- Défini le contenu du main -->
+    <main>
+        <div class="affichageDonnees" id="affichageDonnees"><div class="affichagePrenom" id="affichagePrenom"></div><div class="affichageDate" id="affichageDate"></div><div class="affichageHeureConnexion" id="affichageHeureConnexion"></div></div>
+        <div class="bodyCategories" id="bodyCategories">
+            <div class="thead">
+                <h1 class="h1C" id="h1C">Sujets</h1><h1>Auteur</h1><h1>Dernier msg</h1>
+            </div>
+            <div class="listeSujet" id="listeSujet"></div>
+            <h2 class="h2C" id="h2C">Nouveau sujet</h2>
+            <div class="nouveauSujet" id="nouveauSujet">
+              <input type="text" class="sujetTitre" id="sujetTitre" placeholder="Titre du Sujet">
+              <textarea class="textaera" id="sujetMessage" placeholder="Message du Sujet"></textarea>
+            </div>
+            <div class="boutonCategories">
+                <button class="creerSujet" id="creerSujet">POSTER</button>
+                <a href="categories.html"><button class="creerSujet2" id="creerSujet">Retour a la liste<br>des sujets</button></a>
+            </div>
         </div>
-    </div>
-    <div class="bodySujet" id="bodySujet">
-    </div>
+        <div class="bodySujet" id="bodySujet">
+        </div>
+    </main>
+    <!-- Défini le contenu du footer -->
     <footer>
-        <div class="footer" id="footer">
-            <span class="span1" id="span1">NOUS SUIVRE</span>
-            <div class="logoReseaux" id="logoReseaux">
-                <img src="../images/facebook.png" class="facebook" id="facebook" alt="logo facebook">
-                <img src="../images/marque-x.png" class="X" id="X" alt="logo X">
-                <img src="../images/instagram.png" class="instagram" id="instagram" alt="logo instagram">
-                <img src="../images/youtube.png" class="youtube" id="youtube" alt="logo youtube">
-            </div>
-            <div>
-                <span class="spanIndex" id="span2">Contact | L'équipe | Informations légales | C.G.U | C.G.V | Modération | Politique de confidentialité | Cookies</span>
-            </div>
-            <span class="spanIndex" id="span3">Newsletter</span>
+        <div class="nousSuivre" id="nousSuivre">NOUS SUIVRE</div>
+        <div id="logoReseaux" class="logoReseaux">
+            <img src="../images/facebook.png" id="facebook" class="img-fluid" alt="logo facebook">
+            <img src="../images/marque-x.png" id="X" class="img-fluid" alt="logo X">
+            <img src="../images/instagram.png" id="instagram" class="img-fluid" alt="logo instagram">
+            <img src="../images/youtube.png" id="youtube" class="img-fluid" alt="logo youtube">
         </div>
+        <div id="mention" class="mention">Contact | L'équipe | Informations légales | C.G.U | C.G.V | Modération | Politique de confidentialité | Cookies | Newsletter</div>
     </footer>
-    <script src="../javascript/script3.js"></script>
-    <script src="../javascript/script5.js"></script>
-    <script src="../javascript/script6.js"></script>
+    <!-- Défini le chemin vers le script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Défini le chemin vers les autres scripts -->
+    <script src="../javascript/script(affichage prenom + date + heure de co).js"></script>
+    <script src="../javascript/script(fonction pour afficher les topics).js"></script>
+    <script src="../javascript/script(verification d'authentification).js"></script>
 </body>
 </html>
