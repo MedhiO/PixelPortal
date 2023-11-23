@@ -2,8 +2,11 @@
 let sujets = [
   { titre: "Bloquer sur Elden ring aidez moi SVP" },
   { titre: "No man sky VS Starfield comparatif" },
-  { titre: "Comment se rendre sur la lune quantique dans outer wild ?" }
+  { titre: "Comment se rendre sur la lune quantique dans outer wild ?" },
+  { titre: "Liste des meilleurs mod de skyrim" }
 ];
+// Index pour alterner entre les couleurs de fond
+let couleurIndex = 0; 
 
 // Fonction pour afficher les sujets dans la liste
 function afficherSujets() {
@@ -11,15 +14,27 @@ function afficherSujets() {
   listeSujet.innerHTML = "";
 
   sujets.forEach((sujet, index) => {
-      let sujetDiv = document.createElement("div");
-      // Crée un lien
-      let lienSujet = document.createElement("a"); 
-      // Défini l'objet lienSujet comme renvoyant a la page sujet.html
-      lienSujet.href = "sujet.html";
-      lienSujet.textContent = sujet.titre;
-      // Ajoute le lien à la div
-      sujetDiv.appendChild(lienSujet);
-      listeSujet.appendChild(sujetDiv);
+    let sujetDiv = document.createElement("div");
+    let lienSujet = document.createElement("a");
+    let icon = document.createElement("i");
+
+    lienSujet.href = "sujet.html";
+    lienSujet.innerHTML = '<i class="fa-solid fa-folder"></i>';
+    lienSujet.textContent = sujet.titre;
+
+    // Alterne entre les couleurs de fond
+    sujetDiv.style.backgroundColor = couleurIndex % 2 === 0 ? "#363e49" : "#2e3238";
+    couleurIndex++;
+
+    // Défini la hauteur à 80px
+    sujetDiv.style.height = "80px"; 
+
+    // Utilise display: flex pour centrer verticalement le lien
+    sujetDiv.style.display = "flex";
+    sujetDiv.style.alignItems = "center";
+
+    sujetDiv.appendChild(lienSujet);
+    listeSujet.appendChild(sujetDiv);
   });
 }
 
@@ -28,14 +43,13 @@ function creerNouveauSujet() {
   let titre = document.getElementById("sujetTitre").value;
 
   if (titre) {
-      sujets.push({ titre });
-      afficherSujets();
-      document.getElementById("sujetTitre").value = "";
+    sujets.push({ titre });
+    afficherSujets();
+    document.getElementById("sujetTitre").value = "";
   }
 }
 
-// Ajoute un listener sur le bouton poster
 document.getElementById("creerSujet").addEventListener("click", creerNouveauSujet);
 
-// Affiche les sujets initiaux
 afficherSujets();
+
